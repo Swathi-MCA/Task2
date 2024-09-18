@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #ccc;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+            margin-top: 50px;
+        }
+        h1 {
+            color: navy;
+            font-size: 24px;
+        }
+        h3 {
+            color: darkblue;
+            font-size: 16px;
+        }
+        h5 {
+            font-size: 14px;
+        }
+        input[type="text"], input[type="password"], input[type="date"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #1abc9c;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #16a085;
+        }
+        th {
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+        }
+        .login-link a {
+            color:navy;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .login-link a:hover {
+            color: #16a085;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<center>
+    <table>
+        <h1><ins>Registration Form</ins></h1>
+        <tr><th><h3>First Name:</h3></th>
+        <td><input type="text"></td></tr>
+        <tr><th><h3>Last Name:</h3></th>
+            <td><input type="text"></td></tr>
+        <tr><th><h3>Nick Name:</h3></th>
+            <td><input type="text"></td></tr>
+        <tr><th><h3>Email:</h3></th>
+            <td><input type="text"></td></tr>
+        <tr><th><h3>Password:</h3></th>
+            <td><input type="password"></td></tr>
+        <tr><th><h3>Date of Birth:</h3></th>
+            <td><input type="date"></td></tr>
+        <tr><th><h3>Gender:</h3></th>
+            <td>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            </td></tr>
+        <tr><th><h3>Mobile:</h3></th>
+            <td><input type="text"></td></tr>
+        <tr><th><h3>Address:</h3></th>
+            <td><textarea name="address" rows="4" cols="25"></textarea></td></tr>
+        <tr><th><h3>Hobbies:</h3></th>
+            <td>
+                <h5><input type="checkbox">Reading Books</h5>
+                <h5><input type="checkbox">Cycling</h5>
+                <h5><input type="checkbox">Writing (Quotes)</h5>
+            </td>
+        </tr>
+        <tr><th>
+            <button type="submit"><b>Submit</b></button>
+        </th>
+        <td>
+            <button type="reset"><b>Reset</b></button>
+          
+        </td></tr>
+
+    </table>
+    <div class="login-link">
+        <a href="index.html">Already have an account? Login</a>
+    </div>
+</center>
+
+</body>
+</html>

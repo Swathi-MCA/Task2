@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: url("file:///C:/Users/Public/Pictures/Sample%20Pictures/Penguins.jpg") no-repeat center center;
+            background-size: cover; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+            text-align: left;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+        }
+        label {
+            color: darkblue;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 2px solid #dcdcdc;
+            background: transparent;
+            color: black; 
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1abc9c;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #1abc9c;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+        a:hover {
+            color: #16a085;
+            text-decoration: underline;
+        }
+        .show-password-container {
+            display: flex;
+            align-items: center;
+            color: #555; 
+            margin-bottom: 20px;
+        }
+        .show-password-container input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="email">E-mail ID</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        
+        <div class="show-password-container">
+            <input type="checkbox" id="show-password" ">
+            <label for="show-password">Show Password</label>
+        </div>
+        
+        <button>Log In</button>
+        <a href="index1.html">Have no account? Sign in</a>
+    </form>
+
+   
+</body>
+</html>
